@@ -180,7 +180,7 @@ Every coach turn must be traceable, and coach quality must be measured, not assu
 
 LangGraph owns the flow and the rules, LangChain owns model and tool calls, and Langfuse watches both.
 
-_Architecture diagram: see the live doc linked at the top._
+![Agent stack architecture](diagrams/stack_architecture.svg)
 
 Every learner message enters the router, runs through one mode subgraph, and passes the rule guards before a reply goes out; state and records land in storage, and each step is traced to Langfuse for evaluation.
 

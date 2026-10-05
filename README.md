@@ -10,6 +10,7 @@ Build phase 0: design docs and scaffolding. `app/cli.py` (phase 1) doesn't exist
 | --- | --- |
 | `docs/01_requirements.md` | Agent requirements: Steps 1 to 4 (requirements, Project instructions, knowledge pack, progress log) |
 | `docs/02_agent_design.md` | Agent design: architecture, nodes, rule guards, storage, tools, evals, build plan |
+| `docs/diagrams/` | Architecture diagrams (SVG) used by both docs |
 | `docs/progress_log.md` | Learner progress log (manual stand-in until the agent writes it) |
 | `source/` | Original inputs: Aaroh `SKILL.md` and README, ChatGPT setup guide, Project instructions (01), knowledge pack (02), progress log template (03) |
 | `app/state.py` | Typed session state checked by the rule guards |

@@ -25,15 +25,7 @@ DSA_SD_COACH_4Oct2026 is a LangGraph agent that coaches one learner through DSA 
 
 Each learner message runs the same pipeline; only the mode subgraph in the middle changes.
 
-```text
-Learner ──> load_context ──> integrity_check ──> router
-   ^                                               │
-   │                                               v
-   │                              Mode subgraph (one of 9)
-   │                                               │
-   │  reply                                        v
-   └──────── writer <── pass ── rule_guard ── fail: rewrite once ──> back to subgraph
-```
+![Top-level LangGraph graph](diagrams/langgraph_pipeline.svg)
 
 A draft that fails the rule guard goes back to its subgraph once with the reason; a second failure falls back to a safe Socratic question. Live-interview requests stop at integrity_check with a redirect to practice.
 
